@@ -1,0 +1,27 @@
+- class_name: 友情链接
+  class_desc: 人生是旷野，不是轨道
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网志框架
+    - name: Butterfly
+      link: https://butterfly.js.org/posts/21cfbf15/
+      avatar: https://i.postimg.cc/rsHwq3jM/Butteeerfly.png
+      descr: 美丽、简单且强大的网志主题
+
+- class_name: 网站
+  class_desc: 推荐链接
+  link_list:
+    - name: CSU-gra
+      link: https://www.csu.edu.cn/
+      avatar: https://i.postimg.cc/mkyKwHcq/csu.png
+      descr: 中南大学
+    - name: CSU
+      link: http://gms.csu.edu.cn/stu/index
+      avatar: https://i.postimg.cc/mkyKwHcq/csu.png
+      descr: 中南大学研究生教务
+    - name: Weibo
+      link: https://www.weibo.com/
+      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+      descr: 中国最大社交分享平台

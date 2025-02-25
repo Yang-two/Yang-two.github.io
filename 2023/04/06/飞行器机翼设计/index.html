@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>飞行器机翼设计 | Yang-p &amp; Blog</title><meta name="author" content="Yang-p"><meta name="copyright" content="Yang-p"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="飞行器机翼设计 1.设计要求 设计一架类固定翼的跨介质飞行器，跨介质飞行器设计要求如表 1.1 所示。 ​                                                                                 表1.1 跨介质飞行器性能指标    巡航空速 失速速度 最大飞行速度 最大滑行速度 最大潜行速度 最大潜行深度 总重量 续航时间">
+<meta property="og:type" content="article">
+<meta property="og:title" content="飞行器机翼设计">
+<meta property="og:url" content="http://example.com/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/index.html">
+<meta property="og:site_name" content="Yang-p &amp; Blog">
+<meta property="og:description" content="飞行器机翼设计 1.设计要求 设计一架类固定翼的跨介质飞行器，跨介质飞行器设计要求如表 1.1 所示。 ​                                                                                 表1.1 跨介质飞行器性能指标    巡航空速 失速速度 最大飞行速度 最大滑行速度 最大潜行速度 最大潜行深度 总重量 续航时间">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg">
+<meta property="article:published_time" content="2023-04-06T03:11:15.000Z">
+<meta property="article:modified_time" content="2025-02-25T08:59:53.711Z">
+<meta property="article:author" content="Yang-p">
+<meta property="article:tag" content="Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '飞行器机翼设计',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-02-25 16:59:53'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/HBRAYG8CjxzlK3M.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-sitemap"></i><span> 站点</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/510473774/favlist?spm_id_from=333.1007.0.0"><i class="fa-fw fa fa-paper-plane"></i><span> 我的导航</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://bimg.cc"><i class="fa-fw iconfont icon-Bing"></i><span> 必应壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-bookmark"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/share/"><i class="fa-fw fa fa-share-alt-square"></i><span> 分享</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-images"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Yang-p &amp; Blog"><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/OwyId8geWosbEBt.jpg"/><span class="site-name">Yang-p &amp; Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-sitemap"></i><span> 站点</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://space.bilibili.com/510473774/favlist?spm_id_from=333.1007.0.0"><i class="fa-fw fa fa-paper-plane"></i><span> 我的导航</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://bimg.cc"><i class="fa-fw iconfont icon-Bing"></i><span> 必应壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-bookmark"></i><span> 博文</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/share/"><i class="fa-fw fa fa-share-alt-square"></i><span> 分享</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fa fa-images"></i><span> 图库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">飞行器机翼设计</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-06T03:11:15.000Z" title="发表于 2023-04-06 11:11:15">2023-04-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-25T08:59:53.711Z" title="更新于 2025-02-25 16:59:53">2025-02-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>9分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="飞行器机翼设计"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>飞行器机翼设计</h1>
+<h3 id="1-设计要求">1.设计要求</h3>
+<p>设计一架类固定翼的跨介质飞行器，跨介质飞行器设计要求如表 1.1 所示。</p>
+<p>​                                                                                 <strong>表1.1 跨介质飞行器性能指标</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">巡航空速</th>
+<th style="text-align:center">失速速度</th>
+<th style="text-align:center">最大飞行速度</th>
+<th style="text-align:center">最大滑行速度</th>
+<th style="text-align:center">最大潜行速度</th>
+<th style="text-align:center">最大潜行深度</th>
+<th style="text-align:center">总重量</th>
+<th style="text-align:center">续航时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">≥16.67m/s</td>
+<td style="text-align:center">10m/s</td>
+<td style="text-align:center">≥33.34m/s</td>
+<td style="text-align:center">≥5.56m/s</td>
+<td style="text-align:center">≥2.78m/s</td>
+<td style="text-align:center">≥5m</td>
+<td style="text-align:center">约1.5kg</td>
+<td style="text-align:center">≥30min</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-跨介质飞行器主要参数估算">2.跨介质飞行器主要参数估算</h3>
+<p>总体设计的初期完全定好各项参数是比较困难的，而最主要的飞行器设计参数有三个:</p>
+<ol>
+<li>飞行器的起飞重量	$W_{T}$（Kg）;</li>
+<li>机翼面积 S（m²）;</li>
+<li>电机驱动螺旋桨的推力 P（N）；</li>
+</ol>
+<p>这三个参数中任意一个出现变化，就会导致整个飞行器的总体设计方案的改动。对上述三个参数进行处理，给出了下面两个相对参数:</p>
+<ol>
+<li>翼载荷W/S（kg/m²）；</li>
+<li>推重比T/W；</li>
+</ol>
+<p>跨介质飞行器在空中匀速平飞时，重力与升力平衡，由平飞要求有：<br>
+$$<br>
+W＝\frac{1}{2} \rho  V_{min}^{2}SC_{Lmax}<br>
+$$<br>
+式中：W为飞行器重量，</p>
+<p>​			$\rho$为空气密度，</p>
+<p>​			S 为机翼面积，</p>
+<p>​			$V_{min} $为最小平飞速度，</p>
+<p>​			$C_{Lmax}$为最大升力系数</p>
+<p>经过变换可得:<br>
+$$<br>
+\frac{W}{S}＝\frac{1}{2} \rho  V^{2}C_{L}<br>
+$$<br>
+当平飞时，推进器推力等于跨介质航行器阻力<br>
+$$<br>
+T＝\frac{1}{2}\rho V^{2}SC_{x}<br>
+$$<br>
+式中：T ——跨介质航行器机翼的推进器推力，N</p>
+<p>$ C_{x}$为阻力系数</p>
+<p>$ C_{x}$阻力系数可表示为：<br>
+$$<br>
+C_{x} ＝C_{X_{0} } + C_{X_{i} }<br>
+$$<br>
+式中：$ C_{X_{0} }  $为零升阻力系数，这部分阻力系数与飞行器在没有产生升力时的阻力有关，主要包括形状阻力和摩擦阻力。形状阻力主要由飞行器的几何形状和流体特性决定，而摩擦阻力主要由飞行器表面的粗糙度和空气的粘性特性决定。零升阻力系数与飞行器的设计和制造质量密切相关。</p>
+<p>​			$  C_{X_{i} }  $为升致阻力系数，这部分阻力系数与飞行器在产生升力时所引起的阻力有关，主要是诱导阻力。诱导阻力是由于机翼产生升力时在机翼尖端形成的涡旋而产生的阻力。</p>
+<p>将（4）式代入（3）式，得到：<br>
+$$<br>
+T＝\frac{1}{2} \rho V^{2}SC_{X_{0} } +\frac{1}{2} \rho V^{2}SC_{X_{i} }<br>
+$$<br>
+根据椭圆涡旋理论，我们可以得到以下公式来计算诱导阻力系数（升致阻力系数）：<br>
+$$<br>
+C_{xi} ＝\frac{ C_{L}^{2}}{π λ  e}<br>
+$$<br>
+其中：</p>
+<ul>
+<li>$C_{xi}$：诱导阻力系数</li>
+<li>$C_{L}$：升力系数</li>
+<li>λ ：展弦比，即翼展与平均弦长之比</li>
+<li>e：奥斯瓦尔德效率因子，定义一个机翼效率的数字。椭圆翼效率最高，e为1。</li>
+</ul>
+<p>将（6）式代入（5）式，得到：<br>
+$$<br>
+T＝\frac{1}{2} \rho v^{2} S(C_{x0} +\frac{C_{L}^{2} }{\pi \lambda } )<br>
+$$</p>
+<h3 id="3-跨介质飞行器MATLAB进行参数估算">3.跨介质飞行器MATLAB进行参数估算</h3>
+<p>我们选取爬升约束、航时约束、巡航约束、最大平飞速度约束、失速速度约束来作为飞机性能的基本要求。通过参照相关参数和经验公式，确定各个约束方程的相关参数，如下表所示，由此可以绘制出约束曲线族。</p>
+<h4 id="a-爬升约束">a. 爬升约束</h4>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111342742.png" alt="image-20250225111342742"></p>
+<p>飞行器在稳定爬上状态时，采用的推重比计算公式是：<br>
+$$<br>
+\frac{T}{W} ＝sin\alpha +\frac{(C_{x0} +\frac{C_{L,max}^{2} }{\pi\lambda e } )cos\alpha }{C_{L,max} }<br>
+$$<br>
+式中：$C_{x0}$为飞行器的零升阻力系数，$C_{L,max}$为飞行器的最 大升力系数，α为最大爬升角， λ为展弦比，e为奥斯瓦尔德效率因子。</p>
+<h4 id="b-航时约束">b. 航时约束</h4>
+<p>螺旋桨飞机航时最大时的翼载可以用下列公式进行计算：<br>
+$$<br>
+\frac{W}{S} ＝\frac{1}{2} \rho v^{2} \sqrt{3\pi \lambda eC_{x0} }<br>
+$$</p>
+<h4 id="c-巡航速度约束">c. 巡航速度约束</h4>
+<p>飞行器在巡航时，处于水平匀速飞行状态。这个时候飞行器的重量等于作用在飞行器上的升力，而推力等于阻力，所以推重比等于升阻比（或升力系数和阻力系数的比值）的倒数，其计算公式如下：<br>
+$$<br>
+\frac{T}{W} ＝\frac{C_{x0} +\frac{C_{L}^{2} }{\pi \lambda } }{C_{L}}<br>
+$$</p>
+<h4 id="d-最大平飞速度约束">d. 最大平飞速度约束</h4>
+<p>推重比也可以根据最大平飞速度来确定。如果能够得到最大平飞速度和翼载，就能计算出所需要的推重比.在水平飞行状态下,推力T需要克服飞行阻力。根据阻力公式，阻力D可以表示为：D = 1/2 * ρ * V_max^2 * C_x * S，其中 S 为机翼面积。为了计算推重比，需要将推力与重量之比表示为阻力与重量之比。因此，需要将阻力公式中的机翼面积S用重量W和翼载荷（W/S）表示。由于 W/S = W / S，可以得到 S = W / (W/S)。<br>
+$$<br>
+\frac{T}{W} ＝\frac{\frac{1}{2} \rho V <em>{max}^{2} C</em>{x} }{\frac{W}{S} }<br>
+$$<br>
+式中：$V_{max}$为飞行器的失速速度；$C_{x}$为飞行器的阻力系数。</p>
+<h4 id="e-失速速度约束">e.失速速度约束</h4>
+<p>由飞行器水平飞行时升力等于飞机的质量可以得到翼载表达式:<br>
+$$<br>
+\frac{W}{S}＝\frac{1}{2} \rho  V_{S}^{2}C_{L,max}<br>
+$$<br>
+式中：$V_{S}$为飞行器的失速速度。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">约束类型</th>
+<th style="text-align:center">约束曲线公式</th>
+<th style="text-align:center">参数选择</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">爬升约束</td>
+<td style="text-align:center">$\frac{T}{W} ＝sin\alpha +\frac{(C_{x0} +\frac{C_{L,max}^{2} }{\pi\lambda e } )cos\alpha }{C_{L,max} }$</td>
+<td style="text-align:center">α=8゜;$C_{x0}$ =0.01;$C_{L,max}$=1.4;λ=8;e=1</td>
+</tr>
+<tr>
+<td style="text-align:center">航时约束</td>
+<td style="text-align:center">$\frac{W}{S} ＝\frac{1}{2} \rho v^{2} \sqrt{3\pi \lambda eC_{x0} }$</td>
+<td style="text-align:center">$\rho$=1.226;v=16.67;λ=8;e=1;$C_{x0}$ =0.01</td>
+</tr>
+<tr>
+<td style="text-align:center">巡航速度约束</td>
+<td style="text-align:center">$\frac{T}{W} ＝\frac{C_{x0} +\frac{C_{L}^{2} }{\pi \lambda } }{C_{L}}$</td>
+<td style="text-align:center">$C_{x0}$ =0.01;$C_{L}$=1;λ=8</td>
+</tr>
+<tr>
+<td style="text-align:center">最大平飞速度约束</td>
+<td style="text-align:center">$\frac{T}{W} ＝\frac{\frac{1}{2} \rho V <em>{max}^{2} C</em>{x} }{\frac{W}{S} }$</td>
+<td style="text-align:center">$\rho$=1.226;$V_{max}$=33.34</td>
+</tr>
+<tr>
+<td style="text-align:center">失速速度约束</td>
+<td style="text-align:center">$\frac{W}{S}＝\frac{1}{2} \rho  V_{S}^{2}C_{L,max}$</td>
+<td style="text-align:center">$V_{S}$=10;$C_{L,max}$=1.4</td>
+</tr>
+</tbody>
+</table>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111417365.png" alt="image-20250225111417365"></p>
+<p>由上图可以得出，翼载荷为 168.5N/m^2^，即17.194kg/m^2^,推重比在 0.2013 以上。</p>
+<h3 id="4-总体布局设计">4.总体布局设计</h3>
+<p>由于平直机翼有低速性能良好而且升阻比较高的优点,故采用常规的平直梯形机翼。</p>
+<p>机翼的气动特性受到机翼平面几何参数包括翼面积 S、展弦比$\lambda $ 、根梢比η 等的影响。其中，展弦比的变化将影响机翼的气动导数，如诱导阻力系数$  C_{X_{i} }  $ 、零升阻力系数$ C_{X_{0} }  $ 和升力线斜率$C_{y}^{α} $等，增大展弦比将在减小机翼诱导阻力的同时增大升阻比；而减小展弦比可以减小机翼根部的弯矩、减轻结构重量，从而有利于承力构件的布置和内部容积的利用，与此同时也可以防止大迎角时的翼尖失速。综合考虑各方面因素选取展弦比$\lambda $=8。由初始设定和前文计算可知：预估翼载荷$W_{T}$ /S 为17.194kg/m^2^ ，飞行器的最大起飞重量为 1.5kg，则暂定的梯形机翼面积为S=0.0872m^2^ 。</p>
+<p>接下来，我们需要用展弦比（$\lambda $）和机翼面积（S）来计算翼展（b）。展弦比的公式为：<br>
+$$<br>
+\lambda  = b² / S<br>
+$$<br>
+翼展b ≈ 0.835 m</p>
+<p>接着确定机翼的根梢比η  ，由于设计无人机巡航速度为 16.67m/s，需要考虑机翼诱导阻力的影响，机翼的诱导阻力可以表示成<br>
+$$<br>
+C_{xi} ＝K\frac{ C_{L}^{2}}{π λ }<br>
+$$<br>
+当展弦比为定值时，系数 k 是关于根梢比的函数，由 k 与根梢比η 的关系曲线,即查找资料得到在η =1.25 时 k 的值较为理想，且机翼上的气动载荷分布也最接近椭圆形，其余部件尺寸也较为合理。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111431605.png" alt="image-20250225111431605"></p>
+<p>根据机翼的梯形面积公式和转换后的根梢比的公式：<br>
+$$<br>
+S = (c_{root} + c_{tip}) * b / 2<br>
+$$</p>
+<p>$$<br>
+c_{tip} = c_{root} / η<br>
+$$</p>
+<p>所以，翼根处弦长约为0.175 m，翼梢处弦长约为0.140 m，机翼整体平均气动弦长约为0.104 m。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111447569.png" alt="image-20250225111447569"></p>
+<h4 id="翼型选择">翼型选择</h4>
+<p>一般情况下，翼型的选择需满足下列条件：</p>
+<p>（1）最大升力系数尽可能大；</p>
+<p>（2）在设计升力系数点的阻力系数应尽量小；</p>
+<p>（3）在设计升力系数附近，应具有一段尽量平直的低阻区，防止飞机速度变化时阻力产生</p>
+<p>较大的波动；</p>
+<p>（4）可用迎角范围尽量大以防止失速，且巡航状态下的迎角应尽量远离失速迎角；</p>
+<p>（5）相对厚度不能太小，以免机翼付出结构重量上的代价；</p>
+<p>（6）翼型的零升力矩系数不能太大，以免引起太大的配平力矩。</p>
+<p>雷诺数计算公式：<br>
+$$<br>
+R_{e} ＝\frac{\rho vD}{u}<br>
+$$<br>
+式中，$\rho$ 为空气密度，<em>u</em> 为空气粘度，$\rho$ =1.226*kg /m^3^ ，*u =$1.79\times 10^{-5} N\cdot s/m^{} $均为常数；</p>
+<p><em>v</em> 为空气流速，根据巡航速度，取 16.67 m/s； <em>D</em> 为特征尺寸，这里取平均气动弦长，即0.104m。带入数据，算得雷诺数$R_{e}$约为 118743。</p>
+<p>五种翼型的升力系数、阻力系数、升阻比系数和俯仰力矩系数曲线图。</p>
+<p>NACA4412(翼型的相对弯度为4%，最大弯度位置在弦长的0.4，相对厚度为12%)；</p>
+<p>CLARK Y( 翼型的相对弯度为3.43%，最大弯度位置在弦长的0.42，相对厚度为11.71%);</p>
+<p>NACA2415(翼型的相对弯度为2%，最大弯度位置在弦长的0.4，相对厚度为15%)；</p>
+<p>USA-35B(翼型的相对弯度为3.19%，最大弯度位置在弦长的0.3，相对厚度为11.61%)；</p>
+<p>NACA2412(翼型的相对弯度为2%，最大弯度位置在弦长的0.4，相对厚度为12%)；</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111505192.png" alt="image-20250225111505192"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111517240.png" alt="image-20250225111517240"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="C:%5CUsers%5C12645%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20250225111527569.png" alt="image-20250225111527569"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Yang-p</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/">http://example.com/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Yang-p & Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2024/06/11/LTVcqpWBUf2u9hQ.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://s2.loli.net/2024/06/11/T7F4Ua9xBkDXChK.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2024/06/07/hello-world/" title="Hello World"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hello World</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/HBRAYG8CjxzlK3M.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yang-p</div><div class="author-info__description">坚持是一种常态，优秀是一种习惯！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Yang-two"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Yang-two" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:yangtwo339@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">飞行器机翼设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AE%BE%E8%AE%A1%E8%A6%81%E6%B1%82"><span class="toc-number">1.0.1.</span> <span class="toc-text">1.设计要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%B7%A8%E4%BB%8B%E8%B4%A8%E9%A3%9E%E8%A1%8C%E5%99%A8%E4%B8%BB%E8%A6%81%E5%8F%82%E6%95%B0%E4%BC%B0%E7%AE%97"><span class="toc-number">1.0.2.</span> <span class="toc-text">2.跨介质飞行器主要参数估算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%B7%A8%E4%BB%8B%E8%B4%A8%E9%A3%9E%E8%A1%8C%E5%99%A8MATLAB%E8%BF%9B%E8%A1%8C%E5%8F%82%E6%95%B0%E4%BC%B0%E7%AE%97"><span class="toc-number">1.0.3.</span> <span class="toc-text">3.跨介质飞行器MATLAB进行参数估算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#a-%E7%88%AC%E5%8D%87%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.0.3.1.</span> <span class="toc-text">a. 爬升约束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b-%E8%88%AA%E6%97%B6%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.0.3.2.</span> <span class="toc-text">b. 航时约束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#c-%E5%B7%A1%E8%88%AA%E9%80%9F%E5%BA%A6%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.0.3.3.</span> <span class="toc-text">c. 巡航速度约束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#d-%E6%9C%80%E5%A4%A7%E5%B9%B3%E9%A3%9E%E9%80%9F%E5%BA%A6%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.0.3.4.</span> <span class="toc-text">d. 最大平飞速度约束</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#e-%E5%A4%B1%E9%80%9F%E9%80%9F%E5%BA%A6%E7%BA%A6%E6%9D%9F"><span class="toc-number">1.0.3.5.</span> <span class="toc-text">e.失速速度约束</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%80%BB%E4%BD%93%E5%B8%83%E5%B1%80%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.0.4.</span> <span class="toc-text">4.总体布局设计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BF%BC%E5%9E%8B%E9%80%89%E6%8B%A9"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">翼型选择</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/06/07/hello-world/" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/06/07/hello-world/" title="Hello World">Hello World</a><time datetime="2024-06-07T08:07:29.319Z" title="发表于 2024-06-07 16:07:29">2024-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/" title="飞行器机翼设计"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/loading.gif" data-original="https://s2.loli.net/2024/06/11/JzZHU8qogKIrY9M.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="飞行器机翼设计"/></a><div class="content"><a class="title" href="/2023/04/06/%E9%A3%9E%E8%A1%8C%E5%99%A8%E6%9C%BA%E7%BF%BC%E8%AE%BE%E8%AE%A1/" title="飞行器机翼设计">飞行器机翼设计</a><time datetime="2023-04-06T03:11:15.000Z" title="发表于 2023-04-06 11:11:15">2023-04-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Yang-p</div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://yangpeng.online/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z\d\-\.\+]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(t.test(e.href)||r.test(e.href))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var a=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,d=o();function o(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(t){(a||t)&&(d=o());for(var e,i=0;i<d.length;i++)0<=(e=(e=d[i]).getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,a,n,o=d[i];e=function(){d=d.filter(function(t){return o!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(o)},(t=o).dataset.loaded||(t.hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(a=new Image,n=t.getAttribute("data-original"),a.onload=function(){t.src=n,t.removeAttribute("data-original"),t.setAttribute("data-loaded",!0),e&&e()},a.onerror=function(){t.removeAttribute("data-original"),t.setAttribute("data-loaded",!1),t.src=n},t.src!==n&&(a.src=n)))}()}function e(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",e),r.addEventListener("resize",e),r.addEventListener("orientationchange",e)}(this);</script></body></html>
